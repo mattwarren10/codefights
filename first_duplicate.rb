@@ -1,6 +1,6 @@
 a = [2, 3, 3, 1, 5, 2]
 
-def first_duplicate(a)  
+def firstDuplicate(a)  
   dup_idc = []
   a.each_with_index do |n, i|
     (i+1..a.length-1).each do |o|
@@ -13,4 +13,4 @@ def first_duplicate(a)
   dup_idc.empty? ? -1 : a[dup_idc.min]
 end
 
-puts first_duplicate(a)
+puts firstDuplicate(a)
