@@ -2,11 +2,9 @@ a = [2, 3, 3]
 
 def firstDuplicate(a)
 	b = {}
-	dupl = 0
   0.upto(a.length-1) do |i|
   	if b.include?(a[i])
-  		b[a[i]] += 1
-  		dupl += 1
+  		b[a[i]] += 1  	
   	else
   		b[a[i]] = 1
   	end
